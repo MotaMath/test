@@ -9,14 +9,18 @@ p {
   font-size: 60px;
   margin-top: 0px;
 }
+
+.aviao{
+  display: inline-block;
+}
 </style>
 </head>
-<body style="background-color: cornsilk;">
+<body>
 
-<p style='font-size:100px;'>&#9203; Data da viagem</p>
+<p style='font-size:100px;'>&#9203; Viagem USA</p>
 
 <p style="margin-bottom: 10px;">Cronômetro:</p>
-<p id="demo" style="background-color: aqua;"></p>
+<p id="demo" style="background-color: #213555; color: white"></p>
 
 <script>
 // Set the date we're counting down to
@@ -44,14 +48,17 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "Aproveite a viagem!";
   }
 }, 1000);
 </script>
 <hr>
-<h2 style="color: blue;">Dados de voo</h2>
-<h4>Quarta - 17 de Janeiro de 2024</h4>
-<h4>Goiania Brasil para Atlanta Georgia</h4>
+<div class="aviao">
+  <h2 style="color: blue;">Dados de voo</h2>
+  <div><img src="delta.png" alt="Aviao" width="350px" height="100px" style="float: right; display:inline-block"></div>
+  <h4>Quarta - 17 de Janeiro de 2024</h4>
+  <h4>Goiania Brasil para Atlanta Georgia</h4>
+</div>
 <hr>
 <h3 style="color: blue;">Passageiros:</h3>
 <h3 style="margin-left: 10px;">1. Wilza Chaves Mota Costa</h3>
